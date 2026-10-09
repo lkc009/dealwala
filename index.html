@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dealwala — AI Deal Intelligence for India</title>
+<meta name="description" content="Dealwala's AI bots watch Indian online stores 24/7 — spotting real price drops, pricing errors and loot deals, and pinging you on Telegram the moment they go live.">
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --line:#30363d; --txt:#e6edf3; --mut:#8b949e;
+          --acc:#ff9900; --acc2:#ffad33; --grn:#3fb950; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--txt); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; border-bottom:1px solid var(--line); }
+  .logo { font-size:22px; font-weight:800; letter-spacing:-.5px; }
+  .logo span { color:var(--acc); }
+  nav a { color:var(--mut); text-decoration:none; margin-left:22px; font-size:15px; }
+  nav a:hover { color:var(--txt); }
+  .hero { text-align:center; padding:84px 0 64px; }
+  .badge { display:inline-block; border:1px solid var(--acc); color:var(--acc); border-radius:999px;
+           padding:6px 16px; font-size:13px; font-weight:600; letter-spacing:.4px; margin-bottom:24px; }
+  h1 { font-size:clamp(34px,6vw,58px); line-height:1.12; letter-spacing:-1.5px; margin-bottom:20px; }
+  h1 em { font-style:normal; color:var(--acc); }
+  .sub { color:var(--mut); font-size:18px; max-width:640px; margin:0 auto 36px; }
+  .cta { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:14px 30px; border-radius:10px; font-weight:700; font-size:16px; text-decoration:none; }
+  .btn-p { background:var(--acc); color:#111; }
+  .btn-p:hover { background:var(--acc2); }
+  .btn-s { border:1px solid var(--line); color:var(--txt); }
+  .btn-s:hover { border-color:var(--acc); }
+  .strip { display:flex; gap:0; border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:20px 0 70px; flex-wrap:wrap; }
+  .strip div { flex:1 1 200px; padding:26px; text-align:center; border-left:1px solid var(--line); }
+  .strip div:first-child { border-left:none; }
+  .strip b { display:block; font-size:20px; color:var(--acc); margin-bottom:6px; }
+  .strip span { color:var(--mut); font-size:14px; }
+  h2 { font-size:30px; letter-spacing:-.8px; margin-bottom:14px; text-align:center; }
+  .secsub { color:var(--mut); text-align:center; max-width:600px; margin:0 auto 40px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-bottom:80px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:28px; }
+  .card .n { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:10px;
+             background:rgba(255,153,0,.14); color:var(--acc); font-weight:800; margin-bottom:16px; }
+  .card h3 { font-size:19px; margin-bottom:10px; }
+  .card p { color:var(--mut); font-size:15px; }
+  .card code { color:var(--grn); font-size:13px; }
+  .road { list-style:none; max-width:640px; margin:0 auto 80px; }
+  .road li { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin-bottom:12px;
+             display:flex; gap:14px; align-items:baseline; }
+  .road li::before { content:"→"; color:var(--acc); font-weight:800; }
+  .road b { display:block; } .road span { color:var(--mut); font-size:14px; }
+  footer { border-top:1px solid var(--line); padding:34px 0 44px; text-align:center; color:var(--mut); font-size:14px; }
+  footer a { color:var(--acc); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="logo">Deal<span>wala</span></div>
+    <div>
+      <a href="#how">How it works</a>
+      <a href="#stack">Stack</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="https://github.com/lkc009" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">BUILT IN INDIA · RUNNING 24/7</div>
+    <h1>Never miss a <em>loot deal</em> again.</h1>
+    <p class="sub">Dealwala's AI bots watch Indian online stores round the clock — spotting real
+    price drops, pricing errors and limited-stock blowouts, and pinging you on Telegram the
+    moment they go live.</p>
+    <div class="cta">
+      <a class="btn btn-p" href="#how">See how it works</a>
+      <a class="btn btn-s" href="https://github.com/lkc009" target="_blank" rel="noopener">Building in public ↗</a>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div><b>24/7</b><span>autonomous store monitoring</span></div>
+    <div><b>AI-scored</b><span>real discounts vs fake markdowns</span></div>
+    <div><b>Instant</b><span>verified alerts on Telegram</span></div>
+  </div>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="secsub">Three steps between a price drop and your phone buzzing.</p>
+    <div class="grid">
+      <div class="card"><div class="n">1</div><h3>Scan</h3>
+        <p>Autonomous Python bots monitor prices across major Indian e-commerce stores
+        around the clock — including during festive sale chaos.</p></div>
+      <div class="card"><div class="n">2</div><h3>Score</h3>
+        <p>Claude-powered scoring separates genuine deals from inflated-MRP tricks,
+        detects pricing anomalies, and ranks every find by real value.</p></div>
+      <div class="card"><div class="n">3</div><h3>Alert</h3>
+        <p>Verified deals hit your Telegram instantly in plain language — with the
+        direct buy link, before the stock (or the price error) disappears.</p></div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <h2>Under the hood</h2>
+    <p class="secsub">Real systems, running today.</p>
+    <div class="grid">
+      <div class="card"><div class="n">◈</div><h3>Dealwala 24/7 bot</h3>
+        <p>Continuous deal-hunting engine. <code>Python · live</code></p></div>
+      <div class="card"><div class="n">◈</div><h3>Telegram deal channel</h3>
+        <p>Instant alert delivery to subscribers. <code>Telegram · live</code></p></div>
+      <div class="card"><div class="n">◈</div><h3>APEX automation stack</h3>
+        <p>Autonomous booking agent with LLM orchestration and a live dashboard —
+        the engine behind end-to-end purchase workflows. <code>LLM agents</code></p></div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>On the roadmap</h2>
+    <p class="secsub">Where Dealwala goes next.</p>
+    <ul class="road">
+      <li><div><b>Price-history tracking</b><span>Know if today's "deal" is really the lowest it's been.</span></div></li>
+      <li><div><b>Deal-score API</b><span>Let other apps and stores plug into our verification engine.</span></div></li>
+      <li><div><b>WhatsApp alerts</b><span>Meet shoppers where they already are.</span></div></li>
+      <li><div><b>Browser extension</b><span>Deal verdicts right on the product page.</span></div></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Dealwala · Pune, India<br>
+    <a href="mailto:founder@dealwalaindia.in">founder@dealwalaindia.in</a> ·
+    <a href="https://github.com/lkc009" target="_blank" rel="noopener">github.com/lkc009</a>
+  </footer>
+
+</div>
+</body>
+</html>
